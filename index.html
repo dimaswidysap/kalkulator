@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="container-cal">
+        <section class="container-input">
+          <input type="text" id="display" readonly placeholder="0" />
+        </section>
+
+        <section class="container-button">
+          <button class="button icon-special" onclick="hapusSemua()">
+            <i class="fa-solid fa-c"></i>
+          </button>
+          <button class="button icon-special" onclick="hapusSatu()">
+            <i class="fa-solid fa-backspace"></i>
+          </button>
+          <button class="button icon-special" onclick="inputAngka('%')">
+            <i class="fa-solid fa-percent"></i>
+          </button>
+          <button class="button icon-special" onclick="inputAngka('/')">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+        </section>
+
+        <section class="container-button">
+          <button class="button" onclick="inputAngka('7')">7</button>
+          <button class="button" onclick="inputAngka('8')">8</button>
+          <button class="button" onclick="inputAngka('9')">9</button>
+          <button class="button icon-special" onclick="inputAngka('*')">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </section>
+
+        <section class="container-button">
+          <button class="button" onclick="inputAngka('4')">4</button>
+          <button class="button" onclick="inputAngka('5')">5</button>
+          <button class="button" onclick="inputAngka('6')">6</button>
+          <button class="button icon-special" onclick="inputAngka('-')">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </section>
+
+        <section class="container-button">
+          <button class="button" onclick="inputAngka('1')">1</button>
+          <button class="button" onclick="inputAngka('2')">2</button>
+          <button class="button" onclick="inputAngka('3')">3</button>
+          <button class="button icon-special" onclick="inputAngka('+')">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </section>
+
+        <section class="container-button">
+          <button class="button">
+            <img src="asset/icon/LOGOSAYA.svg" alt="" />
+          </button>
+          <button class="button" onclick="inputAngka('0')">0</button>
+          <button class="button" onclick="inputAngka('.')">.</button>
+          <button class="button" onclick="hitungHasil()">
+            <i class="fa-solid fa-equals"></i>
+          </button>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

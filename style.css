@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: rgb(15, 15, 15);
+}
+
+main {
+  width: 90%;
+  height: 100svh;
+  max-width: 30rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input {
+  all: unset; /* Cara instan mereset hampir semua properti */
+
+  /* Tambahkan ini jika all:unset terasa terlalu ekstrem */
+  appearance: none; /* Menghapus gaya khusus browser (terutama di Safari) */
+  -webkit-appearance: none;
+
+  box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar */
+  width: 100%;
+}
+
+.container-cal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.container-input {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-input input {
+  width: 70%;
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-weight: 900;
+  color: rgb(179, 179, 179);
+  font-size: 1.2em;
+}
+
+.container-button {
+  width: 100%;
+}
+
+.container-button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  aspect-ratio: 1/1;
+  background-color: rgb(42, 42, 42);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
+  color: rgb(179, 179, 179);
+  font-weight: 900;
+}
+
+.icon-special {
+  color: rgb(15, 15, 15);
+}
+
+.button:active {
+  transform: scale(0.8);
+}
+
+.button img {
+  opacity: 0.9;
+}
